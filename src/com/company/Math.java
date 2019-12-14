@@ -29,18 +29,10 @@ public class Math {
     }
 
     public static boolean changeTemperature(int temp) {
-        if (temp > 15 && temp < 33) {
-            return true;
-        } else {
-            return false;
-        }
+        return temp > 15 && temp < 33;
     }
 
     public static boolean login(String username, String password) {
-        if (username.equalsIgnoreCase("Ducdt@123") && password.equalsIgnoreCase("123456")) {
-            return true;
-        } else {
-            return false;
-        }
+        return username.equalsIgnoreCase("Ducdt@123") && password.equalsIgnoreCase("123456");
     }
 }
